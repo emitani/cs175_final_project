@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrivingCompanion/AutomaticAPI.swift"
+            timestampString = "502956675.035531"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
+            landmarkName = "getAccessToken(code:completion:)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrivingCompanion/AutomaticAPI.swift"
+            timestampString = "502956675.035531"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "192"
+            endingLineNumber = "192"
+            landmarkName = "getAccessToken(code:completion:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrivingCompanion.getAccessToken (code : Swift.String, completion : (Swift.Optional&lt;DrivingCompanion.AutomaticSession&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DrivingCompanion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eikomitani/Documents/DrivingCompanion/DrivingCompanion/AutomaticAPI.swift"
+                  timestampString = "502503937.301039"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "1926">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrivingCompanion.(getAccessToken (code : Swift.String, completion : (Swift.Optional&lt;DrivingCompanion.AutomaticSession&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "DrivingCompanion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eikomitani/Documents/DrivingCompanion/DrivingCompanion/AutomaticAPI.swift"
+                  timestampString = "502503937.303227"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "4808">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
