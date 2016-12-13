@@ -26,29 +26,46 @@
                                 <rect key="frame" x="131" y="266" width="112" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="by Eiko Mitani" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTL-r5-Mmq">
-                                <rect key="frame" x="131" y="145" width="114" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTL-r5-Mmq">
+                                <rect key="frame" x="131" y="145" width="114" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4it-0o-zv6"/>
+                                    <constraint firstAttribute="width" constant="114" id="fa1-pm-iCd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Driving Companion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLv-F3-jt9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driving Companion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLv-F3-jt9">
                                 <rect key="frame" x="100" y="116" width="174" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="5Mw-in-jgH"/>
+                                    <constraint firstAttribute="height" constant="21" id="PbO-gb-23g"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="version 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAs-DK-Wh3">
-                                <rect key="frame" x="145" y="169" width="86" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="by Eiko Mitani" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAs-DK-Wh3">
+                                <rect key="frame" x="133.5" y="174" width="105.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="r4f-1g-pmB"/>
+                                    <constraint firstAttribute="width" constant="105.5" id="y9V-EB-O37"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rAs-DK-Wh3" firstAttribute="top" secondItem="xTL-r5-Mmq" secondAttribute="bottom" constant="8" id="7FU-wD-auD"/>
+                            <constraint firstItem="xTL-r5-Mmq" firstAttribute="top" secondItem="kLv-F3-jt9" secondAttribute="bottom" constant="8" id="IgJ-yN-hsG"/>
+                            <constraint firstItem="kLv-F3-jt9" firstAttribute="top" secondItem="J05-dH-s6y" secondAttribute="bottom" constant="52" id="Lte-hw-yxo"/>
+                            <constraint firstItem="kLv-F3-jt9" firstAttribute="centerX" secondItem="BEZ-Bv-gYn" secondAttribute="centerX" id="OnI-eY-DjH"/>
+                            <constraint firstItem="rAs-DK-Wh3" firstAttribute="centerX" secondItem="BEZ-Bv-gYn" secondAttribute="centerX" id="jcY-ft-h04"/>
+                            <constraint firstItem="xTL-r5-Mmq" firstAttribute="centerX" secondItem="BEZ-Bv-gYn" secondAttribute="centerX" id="ztt-Tq-GDY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="mnx-Pq-I3M">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="bce-a8-gGT">
@@ -63,7 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Kx-RH-Rml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-939" y="88"/>
+            <point key="canvasLocation" x="-940" y="87.706146926536732"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
