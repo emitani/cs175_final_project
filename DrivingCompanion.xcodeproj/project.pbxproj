@@ -35,6 +35,7 @@
 		3292C6601DFA7DC000F6DCB7 /* TripInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3292C65F1DFA7DC000F6DCB7 /* TripInfoCell.swift */; };
 		3292C6621DFA7DD900F6DCB7 /* DoublePieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3292C6611DFA7DD900F6DCB7 /* DoublePieChartCell.swift */; };
 		3292C6641DFA7FC200F6DCB7 /* TripDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3292C6631DFA7FC200F6DCB7 /* TripDetailTableViewController.swift */; };
+		329CD6EB1DFFC00300CF131E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329CD6EA1DFFC00300CF131E /* AboutViewController.swift */; };
 		32CEAD901DF55F23009F1D0F /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CEAD8F1DF55F23009F1D0F /* ChartViewController.swift */; };
 		32E17FF31DF1D291003D7C14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E17FF21DF1D291003D7C14 /* AppDelegate.swift */; };
 		32E17FF81DF1D291003D7C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E17FF61DF1D291003D7C14 /* Main.storyboard */; };
@@ -180,6 +181,7 @@
 		3292C65F1DFA7DC000F6DCB7 /* TripInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripInfoCell.swift; sourceTree = "<group>"; };
 		3292C6611DFA7DD900F6DCB7 /* DoublePieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoublePieChartCell.swift; sourceTree = "<group>"; };
 		3292C6631DFA7FC200F6DCB7 /* TripDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripDetailTableViewController.swift; sourceTree = "<group>"; };
+		329CD6EA1DFFC00300CF131E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		32CEAD8F1DF55F23009F1D0F /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		32CEAD991DF56103009F1D0F /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Charts-master-2/Charts.xcodeproj"; sourceTree = "<group>"; };
 		32E17FEF1DF1D291003D7C14 /* DrivingCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrivingCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -279,6 +281,7 @@
 				3292C65F1DFA7DC000F6DCB7 /* TripInfoCell.swift */,
 				3292C6611DFA7DD900F6DCB7 /* DoublePieChartCell.swift */,
 				3292C6631DFA7FC200F6DCB7 /* TripDetailTableViewController.swift */,
+				329CD6EA1DFFC00300CF131E /* AboutViewController.swift */,
 			);
 			path = DrivingCompanion;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				320D80D01DF4F33300E07B66 /* TripDataItemCell.swift in Sources */,
 				3204387A1DF8665200014F83 /* MapViewCell.swift in Sources */,
 				3204387C1DF92A6300014F83 /* Settings.swift in Sources */,
+				329CD6EB1DFFC00300CF131E /* AboutViewController.swift in Sources */,
 				322C85D11DF4597C004A0D22 /* TripStore.swift in Sources */,
 				32E17FF31DF1D291003D7C14 /* AppDelegate.swift in Sources */,
 			);

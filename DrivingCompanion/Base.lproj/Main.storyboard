@@ -10,6 +10,61 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--About-->
+        <scene sceneID="0GZ-WJ-ffH">
+            <objects>
+                <viewController id="HMt-hs-QjT" customClass="AboutViewController" customModule="DrivingCompanion" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J05-dH-s6y"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gec-bU-ZeI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BEZ-Bv-gYn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Car-96" translatesAutoresizingMaskIntoConstraints="NO" id="5Rx-Rc-ed9">
+                                <rect key="frame" x="131" y="266" width="112" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="by Eiko Mitani" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTL-r5-Mmq">
+                                <rect key="frame" x="131" y="145" width="114" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Driving Companion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLv-F3-jt9">
+                                <rect key="frame" x="100" y="116" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="version 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAs-DK-Wh3">
+                                <rect key="frame" x="145" y="169" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="mnx-Pq-I3M">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="bce-a8-gGT">
+                            <connections>
+                                <action selector="close" destination="HMt-hs-QjT" id="r5f-Qm-XqB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="carImage" destination="5Rx-Rc-ed9" id="0C9-dr-I70"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Kx-RH-Rml" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-939" y="88"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -22,8 +77,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxV-uF-utz">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxV-uF-utz">
                                 <rect key="frame" x="67" y="283" width="240" height="39"/>
+                                <gestureRecognizers/>
                                 <state key="normal" image="signin-xlarge@2x.271d1595432a"/>
                                 <connections>
                                     <action selector="loginWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNy-dG-4rb"/>
@@ -31,18 +87,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="pxV-uF-utz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ZYT-Np-URn"/>
-                            <constraint firstItem="pxV-uF-utz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="gUe-A1-oF8"/>
+                            <constraint firstItem="pxV-uF-utz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1ei-JG-kfb"/>
+                            <constraint firstItem="pxV-uF-utz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ceC-LW-cKk"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="loginButton" destination="pxV-uF-utz" id="A5p-QU-Vts"/>
+                        <segue destination="xCj-fd-QzQ" kind="presentation" identifier="About" id="mGk-gJ-bdw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-558" y="37"/>
+            <point key="canvasLocation" x="380" y="36.431784107946029"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="BhU-Li-aZE">
@@ -63,7 +121,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ym-2L-3AF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904.79999999999995" y="37.331334332833585"/>
+            <point key="canvasLocation" x="1844" y="37.331334332833585"/>
         </scene>
         <!--My Car-->
         <scene sceneID="nDp-D1-gmv">
@@ -140,7 +198,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0J5-D9-rNB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3802" y="-238"/>
+            <point key="canvasLocation" x="4740" y="-238.83058470764618"/>
         </scene>
         <!--Statistics-->
         <scene sceneID="KYC-we-FUd">
@@ -885,11 +943,30 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLf-af-n4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="-36"/>
+            <point key="canvasLocation" x="3423.1999999999998" y="-36.431784107946029"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w3W-l2-zV9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xCj-fd-QzQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Qlu-m6-AT2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HMt-hs-QjT" kind="relationship" relationship="rootViewController" id="c1r-0M-PrY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WjL-pV-8WP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1474.4000000000001" y="-176.76161919040482"/>
         </scene>
     </scenes>
     <resources>
         <image name="Car-50" width="25" height="25"/>
+        <image name="Car-96" width="48" height="48"/>
         <image name="Line Chart-50" width="25" height="25"/>
         <image name="Map Marker-50" width="25" height="25"/>
         <image name="Settings-50" width="25" height="25"/>
